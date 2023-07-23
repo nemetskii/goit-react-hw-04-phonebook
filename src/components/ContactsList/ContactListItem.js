@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { Component } from 'react';
 import css from './ContactListItem.module.css';
-
-export default class ContactListItem extends React.Component {
+export class ContactsListItem extends Component {
   render() {
     return (
       <>
-        <li className={css.list__item} style={{ marginBottom: '10px' }}>
+        <li className={css.list__item}>
           <span>
             {this.props.contact.name}: {this.props.contact.number}
           </span>
